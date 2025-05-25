@@ -1,0 +1,42 @@
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.filterButton {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  background-color: black;
+  color: white;
+}
+
+.filterButton.active {
+  background-color: black;
+  color: white;
+  border-color: #FFD700;
+}
+
+@media (max-width: 768px) {
+  .filterContainer {
+    gap: 5px;
+  }
+  
+  .filterButton {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+}

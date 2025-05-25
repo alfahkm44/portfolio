@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  will-change: transform;
+}
+
+.cardImageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1; /* Menggantikan padding-top hack */
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardTitle {
+  color: white;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.cardCategory {
+  color: #FFD700;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardLink {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  padding: 8px 20px;
+  border: 2px solid #FFD700;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  background-color: #FFD700;
+  color: black;
+}

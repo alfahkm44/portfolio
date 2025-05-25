@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  flex: 1;
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 60px;
+  }
+}
