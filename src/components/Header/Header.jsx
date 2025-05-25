@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import styles from './Header.module.css';
 // Path yang benar untuk struktur di atas:
-import logoImage from '../../assets/logo.png';
+import logoImage from '../../assets/logo.webp';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
