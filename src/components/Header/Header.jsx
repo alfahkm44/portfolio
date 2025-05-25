@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar'; // pastikan komponen Navbar tersedia
+import Navbar from './Navbar';
 import styles from './Header.module.css';
+// Path yang benar untuk struktur di atas:
+import logoImage from '../../assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,11 +13,10 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <div className={styles.logoBox}></div>
+          <img src={logoImage} alt="Logo" className={styles.logoImage} />
           <div className={styles.logoTextGroup}>
-            <span className={styles.logoText}>ALFA</span>
-            <span className={styles.logoAccent}>HKM</span>
-            <span className={styles.logoText}>PORTFOLIO</span>
+            <span className={styles.logoText}>alfahkm</span>
+            <span className={styles.logoAccent}>portfolio</span>
           </div>
         </Link>
 
